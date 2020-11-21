@@ -7,15 +7,15 @@ app = Flask(__name__)
 
 
 # Clean the JSON data to grab the specifc information to visualize
-
+# need graph variables for D3: 
+# lan/lng of crash sites for map:
+#count of 
 
 # create route that renders index.html template
 @app.route("/")
 def index():
-    team_list = ["Jumpers", "Dunkers", "Dribblers", "Passers"]
-    return render_template("index.html", list=team_list)
-#Need to edit the homepage index.html to display car crash theme (background pic info stats, etc)
-# Gif example of complex data
+    return render_template("index.html")
+
 @app.route("/graph")
 def graph():
     return render_template("index.html")
@@ -30,9 +30,8 @@ def map():
 @app.route("/bubble")
 def bubble():
     return render_template("index.html")
-    #code exmaples for bubble chart
-    #http://jsfiddle.net/VividD/WDCpq/8/
-    #https://observablehq.com/@d3/bubble-chart
+    #New java script library 
+
     
 
 
